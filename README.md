@@ -65,3 +65,15 @@ $ git push -u origin 현재 자신이 작업한 브랜치 이름
 #### 4. fork한 github 사이트에 들어가서 PR 올리기
 <img width="746" alt="스크린샷 2022-05-15 오후 5 18 58" src="https://user-images.githubusercontent.com/54658745/168463834-03a9dd15-ea86-4f99-b6f5-931bb260d62d.png">
 <img width="1305" alt="스크린샷 2022-05-15 오후 5 19 29" src="https://user-images.githubusercontent.com/54658745/168463838-4387ada1-320f-43ba-83da-75cf9d9792f7.png">
+  
+  
+  
+### 5. Lable
+- feat: 새로운 기능
+- fix : 버그 수정
+- docs : 문서만 변경
+- style : 코드의 의미에 영향을 주지 않는 변경사항 (공백 , 서식 , 세미콜론 누락 등)
+- refactor : 버그를 수정하거나 기능을 추가하지 않는 코드 변경
+- test : 누락된 테스트 추가 또는 기존 테스트 수정
+- chore : 문서 생성과 같은 빌드 프로세스 또는 보조 두구 및 라이브러리 변경
+- rename : 파일 및 폴더 수정 및 디렉토리 작업 이동
