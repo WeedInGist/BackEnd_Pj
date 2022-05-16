@@ -20,7 +20,7 @@
 
 #### 2. 원격 저장소 Remote 설정하기
 ```
-$ git clone https://github.com/Seunghui98/BackEnd_Pj.git
+$ git clone https://github.com/자기github아이디/BackEnd_Pj.git
 $ cd 내려받은 폴더
 $ git init
 $ git remote add upstream https://github.com/WeedInGist/BackEnd_Pj.git
