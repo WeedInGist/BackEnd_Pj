@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com._3to1.pet.mapper.BoardMapper">
+
+    <!-- 게시글 전체 조회 -->
+    <select id="selectBoard" resultType="board">
+        select board_Id, title, content, regDate, updateDate, deleteDate, inNum, category, recoCount, viewCount
+        from board
+        order by board_Id desc
+    </select>
+
+    <!-- 게시글 상세 조회 -->
+    <select id="selectBoardByNo" resultType="board">
+        select board_Id, title, content, regDate, updateDate, deleteDate, inNum, category, recoCount, viewCount
+        from board
+        where board_Id = #{board_Id}
+    </select>
+
+    <!-- 게시글 등록 -->
+    <insert id="insertBoard" parameterType="board">
+        insert into board(
+        board_Id, title, content, regDate, inNum, category
+        ) values (
+        #{board_Id}, #{title}, #{content}, #{regDate},
+        )
+    </insert>
+
+    <!-- 게시글 수정 -->
+    <update id="updateBoard" parameterType="board">
+        update board
+        set title = #{title},
+        content = #{content},
+        category = #{category}
+        where board_Id = #{board_Id}
+    </update>
+
+    <!-- 게시글 삭제 -->
+    <delete id="deleteBoard" parameterType="int">
+        delete
+        from board
+        where board_Id = #{board_Id}
+    </delete>
+
+</mapper>
+
